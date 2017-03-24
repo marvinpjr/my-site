@@ -6,6 +6,36 @@
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     
+        <style>
+        /* xs < 768 */
+        @media screen and (max-width: 767px) {
+            body{ font-size: 4em; }
+            h2 { font-size: 2.5em; }
+            a.btn, div.jumbotron p  { font-size: 1.7em; }
+        }
+
+        /* sm */
+        @media screen and (min-width: 768px) {
+            body { font-size: 3em; }
+            h2 { font-size: 1.8em; }
+            a.btn, div.jumbotron p  { font-size: 1.2em; }
+        }
+
+        /* md */
+        @media screen and (min-width: 992px) {
+            body { font-size: 2em; }
+            h2 { font-size: 1.5em; }
+            a.btn, div.jumbotron p  { font-size: 1.2em; }
+        }
+
+        /* lg */
+        @media screen and (min-width: 1200px) {
+            body { font-size: 1.5em; }
+            h2 { font-size: 2em; }
+            a.btn { font-size: .9em; }
+        }
+        </style>
+
         <title>Marvin Palmer</title>
     </head>
   <body>
@@ -30,12 +60,12 @@
     <div class="jumbotron">
       <div class="container">               
         <h1>Marvin Palmer</h1>
-        <img src="https://avatars3.githubusercontent.com/u/3128163?v=3&s=460" class="img-thumbnail pull-right" />        
+        <img src="https://avatars3.githubusercontent.com/u/3128163?v=3&s=460" class="img-thumbnail img-fluid pull-right" />        
         <p>Senior Software Engineer. Father. Gamer. Musician. Polyamorous.<br>
         Brave and persevering when facing technical challenges. <br>
         Humble, friendly, cooperative, and respectful when working with others.</p>
         <p>            
-            <a class="btn btn-primary btn-lg" href="www.linkedin.com/in/marvinpalmerjr" role="button">My LinkedIn &raquo;</a>
+            <a class="btn btn-primary btn-lg" href="www.linkedin.com/in/marvinpalmerjr" role="button" target="_blank">My LinkedIn &raquo;</a>
         </p>
       </div>
     </div>
@@ -67,7 +97,7 @@
         </div>
         <div class="col-md-4">
           <h2>Polyamorous</h2>
-          <p>I did 20 years of monogamy with a wonderful woman that I still love very much. And yet, as years passed, I got progressively more and more unhappy doing it. Finally, I broke, ended up deeply depressed in a hospital, and we ended up divorced. I felt pretty hopeless about my failure as a person in relationships until I found out about polyamory. And that's very personal information, but also central to my story, and this is my website, so I put it on here.</p>
+          <p>I did 20 years of monogamy with a wonderful woman that I still love very much. And yet, as years passed, I got progressively more and more unhappy doing it. Finally, I ended up depressed, and we ended up divorced. I felt pretty hopeless about my failure as a person in relationships until I found out about polyamory. And that's very personal information, but also central to my story, and this is my website, so I put it on here.</p>
           <p><a class="btn btn-default" href="https://www.morethantwo.com/polyamory.html" role="button" target="_blank">Learn more &raquo;</a></p>
         </div>
       </div>
