@@ -1,124 +1,101 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    
-        <style>
-        /* xs < 768 */
-        @media screen and (max-width: 767px) {
-            body{ font-size: 4em; }
-            h2 { font-size: 2.5em; }
-            a.btn, div.jumbotron p  { font-size: 1.7em; }
-        }
-
-        /* sm */
-        @media screen and (min-width: 768px) {
-            body { font-size: 3em; }
-            h2 { font-size: 1.8em; }
-            a.btn, div.jumbotron p  { font-size: 1.2em; }
-        }
-
-        /* md */
-        @media screen and (min-width: 992px) {
-            body { font-size: 2em; }
-            h2 { font-size: 1.5em; }
-            a.btn, div.jumbotron p  { font-size: 1.2em; }
-        }
-
-        /* lg */
-        @media screen and (min-width: 1200px) {
-            body { font-size: 1.5em; }
-            h2 { font-size: 2em; }
-            a.btn { font-size: .9em; }
-        }
-        </style>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
         <title>Marvin Palmer</title>
+        <style>
+          .jumbotron {
+            background-color: #084C61;
+            color: #D4E7E9;
+          }
+          body {
+            background-color: #177E89;
+            color: #323031;  
+            font-family: 'Fjalla One', sans-serif;        
+          }
+          a {
+            color: #FFC857;
+          }
+          a.btn {
+            background-color: #323031;
+            border-color: #FFC857;
+          }
+        </style>
     </head>
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">marvinpalmer.com</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">          
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
-
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-      <div class="container">               
-        <h1>Marvin Palmer</h1>
-        <img src="https://avatars3.githubusercontent.com/u/3128163?v=3&s=460" class="img-thumbnail img-fluid pull-right" />        
-        <p>Senior Software Engineer. Father. Gamer. Musician. Polyamorous.<br>
-        Brave and persevering when facing technical challenges. <br>
-        Humble, friendly, cooperative, and respectful when working with others.</p>
-        <p>            
-            <a class="btn btn-primary btn-lg" href="www.linkedin.com/in/marvinpalmerjr" role="button" target="_blank">My LinkedIn &raquo;</a>
+      <div class="container-fluid"> 
+        <div class="row justify-content-center">  
+          <div class="col-md-9">
+              <h1>Marvin Palmer</h1>
+              <img src="https://avatars3.githubusercontent.com/u/3128163?v=3&s=460" class="img-fluid img-thumbnail float-right" />                 
+              <p>Senior Software Engineer. Father. Gamer. Musician.<br>
+              Brave and persevering when facing technical challenges. <br>
+              Humble, friendly, cooperative, and respectful when working with others.</p>
+              <p>  
+              <a href="https://twitter.com/marvinpjr?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @marvinpjr</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>          
+          </div>                    
         </p>
       </div>
+    </div>   
     </div>
 
-    <div class="container">
+    <div class="container" id="content">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
           <h2>Software Engineer</h2>
-          <p>My love for programming started in junior high school with an IBM PC XT and a spiral bound handbook for <a href="https://en.wikipedia.org/wiki/IBM_BASIC" target="_blank">BASIC</a>. I wrote ASCII character games and text-based adventure games. I began rediscovering this love in 2003. Wandered through MySql to Classic ASP to .NET. Found happiness in C#, MVC, and Sql Server. Most days, I'm ok with EF. Currently, infatuated with Angular.</p>
-          <p><a class="btn btn-default" href="https://github.com/marvinpjr" role="button" target="_blank">My GitHub &raquo;</a></p>                    
+          <p>My love for programming started in junior high school with an IBM PC XT and a spiral bound handbook for <a href="https://en.wikipedia.org/wiki/IBM_BASIC" target="_blank">BASIC</a>. I wrote ASCII character games and text-based adventure games. I began rediscovering this love in 2003. Wandered through MySql to Classic ASP to .NET. Found happiness in C#, MVC, and Sql Server. Most days, I'm ok with EF. Have done a fair bit of time in Angular 1-4. Currently, infatuated with VueJS, and .NET Core 2+ continues to grow on me.</p>
+          <p>
+            <a class="btn btn-primary" href="https://github.com/marvinpjr" role="button" target="_blank">My GitHub &raquo;</a>
+            <a class="btn btn-primary" href="https://www.codewars.com/users/marvinpjr" role="button" target="_blank">My CodeWars Profile &raquo;</a>
+          </p>                              
         </div>
         <div class="col-md-4">
           <h2>Father</h2>
-          <p>I'm the very proud father of a <span class="age"></span> year old boy. I love watching him celebrate his successful moments in sports like his NFL heroes do, try so hard at academics, laugh hysterically when he beats me at Halo, or do something very thoughtful and completely unprompted.</p>
-          <p><a class="btn btn-default" href="http://www.danoah.com/" role="button" target="_blank">Kinda Like This &raquo;</a></p>           
+          <p>I'm the very proud father of a <span class="age"></span> year old boy. I love watching him celebrate his successful moments in sports like his NFL heroes do, try so hard at academics, laugh hysterically when he beats me at Fornite, or do something very thoughtful and completely unprompted.</p>
+          <p><a class="btn btn-primary" href="http://www.danoah.com/" role="button" target="_blank">Kinda Like This &raquo;</a></p>           
        </div>
         <div class="col-md-4">
           <h2>Gamer</h2>
-          <p>Not that I can compete with a <span class="age"></span> year old. I apparently can't. But I enjoy my Xbox One. Favorite game of all time is Skyrim. Also liked the Assasin's Creed series, the Halo series, Just Cause 2, the Batman Arkham series, and Star Wars: The Force Unleashed series. Currently playing Destiny.</p>
-          <p><a class="btn btn-default" href="http://live.xbox.com/Profile?Gamertag=marvinpjr" role="button" target="_blank">My Xbox Live Profile &raquo;</a></p>
+          <p>Not that I can compete with a <span class="age"></span> year old. I apparently can't. But I enjoy my Xbox One. Favorite game of all time is Skyrim. Also liked the Assasin's Creed series, the Halo series, Just Cause 2, the Batman Arkham series, and Star Wars: The Force Unleashed series. Currently playing COD Black Ops 4.</p>
+          <p><a class="btn btn-primary" href="http://live.xbox.com/Profile?Gamertag=marvinpjr" role="button" target="_blank">My Xbox Live Profile &raquo;</a></p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
           <h2>Musician</h2>
           <p>I play guitar and write songs. And occassionally record something using <a href="http://www.presonus.com/products/Studio-One" target="_blank">Studio One</a> on my computer. Except I haven't played in awhile so my fingers are soft. So, I've regressed to writing bad rap songs. And I can't pretend I don't enjoy that. I even wrote one for a departmental meeting about the <a href="https://f5.com/products/big-ip" target="_blank">Big IP platform</a> and if you really wanna hear it...</p>
-          <p><a class="btn btn-default" href="https://soundcloud.com/marvin-palmer/bigip" role="button" target="_blank">Hear Bad Rap &raquo;</a></p>
+          <p><a class="btn btn-primary" href="https://soundcloud.com/marvin-palmer/bigip" role="button" target="_blank">Hear Bad Rap &raquo;</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Polyamorous</h2>
-          <p>I did 20 years of monogamy with a wonderful woman that I still love very much. And yet, as years passed, I got progressively more and more unhappy doing it. Finally, I ended up depressed, and we ended up divorced. I felt pretty hopeless about my failure as a person in relationships until I found out about polyamory. And that's very personal information, but also central to my story, and this is my website, so I put it on here.</p>
-          <p><a class="btn btn-default" href="https://www.morethantwo.com/polyamory.html" role="button" target="_blank">Learn more &raquo;</a></p>
+          <h2>Yogi</h2>
+          <p>On good days, I'm waking up in the morning and rolling out my yoga mat for a half hour and doing my sun salutations and my downward dogs. And on occasion, I put on my leggings and go hang with my yogini sisters at my favorite yoga studio.</p>          
+          <p><a class="btn btn-primary" href="https://lotusbloomingyoga.com/" role="button" target="_blank">My Favorite Studio &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Link Me</h2>
+          <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="marvinpalmerjr"><a class="LI-simple-link" href='https://www.linkedin.com/in/marvinpalmerjr?trk=profile-badge'>Marvin Palmer</a></div>
         </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>&copy; 2017 Marvin Palmer</p>
+        <p>&copy; 2019 Marvin Palmer</p>
       </footer>
     </div> <!-- /container -->
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>    
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <script>
         $(function(){
             Date.yearsBetween = function( date1, date2 ) {
